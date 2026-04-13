@@ -18,7 +18,7 @@ function getTimeLeft() {
 function Segment({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-4xl md:text-5xl font-semibold text-[#1B0C25] tabular-nums">
+      <span className="text-5xl md:text-[64px] font-extrabold text-[#1B0C25] tabular-nums leading-none">
         {String(value).padStart(2, "0")}
       </span>
       <span className="text-[11px] text-[rgba(27,12,37,0.45)] uppercase tracking-widest mt-1">
