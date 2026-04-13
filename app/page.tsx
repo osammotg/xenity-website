@@ -67,22 +67,42 @@ const faqSchema = {
 
 const problemCards = [
   {
-    icon: "🌐",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <rect x="3" y="5" width="14" height="10" rx="2" stroke="#9B6FC8" strokeWidth="1.5"/>
+        <path d="M7 5V4a3 3 0 016 0v1" stroke="#9B6FC8" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="10" cy="10" r="1.5" fill="#9B6FC8"/>
+      </svg>
+    ),
     title: "US Server Lock-in",
     body: "Your data lives on US servers — subject to the CLOUD Act and beyond EU jurisdiction.",
   },
   {
-    icon: "⚖️",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 2L3 6v4c0 4.418 3.08 8.55 7 9.5C13.92 18.55 17 14.418 17 10V6l-7-4z" stroke="#9B6FC8" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M7 10l2 2 4-4" stroke="#9B6FC8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: "GDPR & AI Act Risk",
     body: "GDPR & EU AI Act violations can cost up to 4% of global annual revenue.",
   },
   {
-    icon: "📋",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M4 4h12v12H4z" stroke="#9B6FC8" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M7 8h6M7 11h4" stroke="#9B6FC8" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    ),
     title: "No Audit Trail",
     body: "No audit trail means you can't prove compliance to regulators or clients.",
   },
   {
-    icon: "💸",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 3v14M6 7l4-4 4 4M6 13l4 4 4-4" stroke="#9B6FC8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: "Unpredictable Costs",
     body: "Per-token cloud pricing becomes unpredictable and unsustainable at scale.",
   },
@@ -210,13 +230,13 @@ export default function HomePage() {
             {problemCards.map((card) => (
               <div
                 key={card.title}
-                className="bg-white rounded-2xl p-6 border border-[rgba(27,12,37,0.06)]"
+                className="bg-[#EDE6F6] rounded-2xl p-7"
               >
-                <span className="text-2xl mb-4 block">{card.icon}</span>
-                <h3 className="text-[15px] font-semibold text-[#1B0C25] mb-2">
+                <div className="mb-4">{card.icon}</div>
+                <h3 className="text-[15px] font-bold text-[#1B0C25] mb-2">
                   {card.title}
                 </h3>
-                <p className="text-[14px] text-[rgba(28,12,38,0.65)] leading-relaxed">
+                <p className="text-[13px] text-[rgba(28,12,38,0.55)] leading-relaxed">
                   {card.body}
                 </p>
               </div>
