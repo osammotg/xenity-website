@@ -157,7 +157,7 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 text-center bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
+      <section className="pt-36 pb-24 px-4 text-center bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-[clamp(42px,7vw,76px)] font-medium leading-none tracking-tight text-[#1B0C25] mb-6">
             Sovereign AI Infrastructure

@@ -17,9 +17,9 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F7F6F7]/90 backdrop-blur-md border-b border-[rgba(27,12,37,0.06)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-semibold text-[#1B0C25] text-sm">
             <span className="text-base font-semibold tracking-tight">Xinity AI</span>
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#F7F6F7] border-t border-[rgba(27,12,37,0.06)] px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-[#F7F6F7]/95 backdrop-blur-md border-t border-[rgba(27,12,37,0.06)] px-6 py-5 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
