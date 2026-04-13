@@ -320,13 +320,13 @@ export default function HomePage() {
           </p>
           <div className="flex items-center justify-center gap-8 mb-10">
             <div className="text-center">
-              <p className="text-3xl font-semibold text-white">100%</p>
-              <p className="text-[12px] text-[rgba(255,255,255,0.45)] mt-1">Stays in Europe</p>
+              <p className="text-[36px] font-extrabold text-white leading-none">100%</p>
+              <p className="text-[12px] text-[rgba(255,255,255,0.45)] mt-2">Stays in Europe</p>
             </div>
             <div className="w-px h-10 bg-[rgba(255,255,255,0.1)]" />
             <div className="text-center">
-              <p className="text-3xl font-semibold text-white">0€</p>
-              <p className="text-[12px] text-[rgba(255,255,255,0.45)] mt-1">For every developer</p>
+              <p className="text-[36px] font-extrabold text-white leading-none">0€</p>
+              <p className="text-[12px] text-[rgba(255,255,255,0.45)] mt-2">For every developer</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
