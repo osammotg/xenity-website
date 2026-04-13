@@ -444,19 +444,31 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {blogPreviews.map((post) => (
+            {blogPreviews.map((post, i) => (
               <Link
                 key={post.slug}
                 href={`/sovereign-ai-blog/${post.slug}`}
-                className="bg-white rounded-2xl p-6 border border-[rgba(27,12,37,0.06)] hover:border-[rgba(27,12,37,0.15)] transition-colors group"
+                className="bg-white rounded-2xl overflow-hidden border border-[rgba(27,12,37,0.06)] hover:border-[rgba(27,12,37,0.15)] transition-colors group flex flex-col"
               >
-                <span className="text-[11px] font-semibold text-[#9B8EAA] uppercase tracking-wider">
-                  {post.tag}
-                </span>
-                <p className="text-[12px] text-[rgba(27,12,37,0.4)] mt-1 mb-3">{post.date}</p>
-                <h3 className="text-[16px] font-medium text-[#1B0C25] group-hover:text-[#9B6FC8] transition-colors leading-snug">
-                  {post.title}
-                </h3>
+                <div
+                  className="h-[160px] w-full"
+                  style={{
+                    background: i === 0
+                      ? "linear-gradient(135deg, #EDE6F6 0%, #D4C5ED 100%)"
+                      : i === 1
+                      ? "linear-gradient(135deg, #e8e4f5 0%, #c9bde6 100%)"
+                      : "linear-gradient(135deg, #f0ecfa 0%, #d8ccf0 100%)",
+                  }}
+                />
+                <div className="p-6 flex-1">
+                  <span className="text-[11px] font-semibold text-[#9B8EAA] uppercase tracking-wider">
+                    {post.tag}
+                  </span>
+                  <p className="text-[12px] text-[rgba(27,12,37,0.4)] mt-1 mb-3">{post.date}</p>
+                  <h3 className="text-[16px] font-medium text-[#1B0C25] group-hover:text-[#9B6FC8] transition-colors leading-snug">
+                    {post.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>
