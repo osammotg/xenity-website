@@ -261,7 +261,7 @@ export default function HomePage() {
             <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-3">
               The Solution
             </p>
-            <h2 className="text-[clamp(28px,4vw,44px)] font-medium text-[#1B0C25] leading-tight">
+            <h2 className="text-[clamp(32px,5vw,60px)] font-medium text-[#1B0C25] leading-tight">
               Own Your AI. Control Your Data.
               <br />
               Predict Your Costs.
@@ -354,7 +354,10 @@ export default function HomePage() {
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-4">
             Our Mission
           </p>
-          <h2 className="text-[clamp(32px,5vw,52px)] font-medium text-[#1B0C25] leading-tight mb-6">
+          <h2
+            className="text-[clamp(32px,5vw,52px)] font-extrabold text-[#1B0C25] leading-tight mb-6"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             Making Europe
             <br />
             <span className="text-[#9B6FC8]">Compute Independent.</span>
@@ -380,14 +383,14 @@ export default function HomePage() {
       {/* FAQ */}
       <section className="py-20 px-4 bg-[#F8F7F8]">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-10 text-center">
+          <div className="mb-10">
             <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-3">
               FAQ
             </p>
-            <h2 className="text-[clamp(28px,4vw,38px)] font-medium text-[#1B0C25]">
+            <h2 className="text-[clamp(28px,4vw,44px)] font-medium text-[#1B0C25]">
               Frequently Asked Questions
             </h2>
-            <p className="mt-3 text-[15px] text-[rgba(28,12,38,0.55)]">
+            <p className="mt-4 text-[15px] text-[rgba(28,12,38,0.55)]">
               Still have a question?{" "}
               <Link
                 href="/contact"
@@ -428,7 +431,7 @@ export default function HomePage() {
               <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-2">
                 Blog
               </p>
-              <h2 className="text-[clamp(22px,3vw,30px)] font-medium text-[#1B0C25]">
+              <h2 className="text-[clamp(28px,4vw,48px)] font-medium text-[#1B0C25]">
                 Insights on Sovereign AI &amp; On-Prem Infrastructure
               </h2>
             </div>
@@ -466,7 +469,7 @@ export default function HomePage() {
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-3">
             Newsletter
           </p>
-          <h2 className="text-[24px] font-medium text-[#1B0C25] mb-2">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-medium text-[#1B0C25] mb-2">
             Not Ready for a Demo Yet?
           </h2>
           <p className="text-[14px] text-[rgba(28,12,38,0.6)] mb-6">
