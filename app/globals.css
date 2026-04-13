@@ -1,26 +1,63 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Xinity color palette */
+  --bg: #F7F6F7;
+  --bg-white: #FFFFFF;
+  --bg-dark: #1B0C25;
+  --bg-card: #EDE6F6;
+  --bg-card-subtle: #F0E8F8;
+
+  --text-primary: #1B0C25;
+  --text-body: rgba(28, 12, 38, 0.8);
+  --text-muted: #9B8EAA;
+  --text-white: #FFFFFF;
+
+  --accent: #D588FC;
+  --accent-light: rgba(155, 111, 200, 0.15);
+
+  --border: rgba(27, 12, 37, 0.1);
+  --border-light: rgba(27, 12, 37, 0.06);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--text-primary);
+  --font-sans: "General Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: "General Sans", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Blog prose styles */
+.prose {
+  color: var(--text-body);
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: var(--text-primary);
+  font-family: "General Sans", sans-serif;
+}
+
+.prose a {
+  color: #9B6FC8;
+  text-decoration: underline;
+}
+
+.prose strong {
+  color: var(--text-primary);
 }
