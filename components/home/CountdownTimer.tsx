@@ -47,7 +47,7 @@ export default function CountdownTimer() {
   }, []);
 
   return (
-    <div className="flex items-end gap-3 md:gap-5">
+    <div className="flex items-end justify-center gap-3 md:gap-5">
       <Segment value={timeLeft.days} label="Days" />
       <Colon />
       <Segment value={timeLeft.hours} label="Hours" />
