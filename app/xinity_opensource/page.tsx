@@ -27,7 +27,7 @@ export default function OpenSourcePage() {
   return (
     <>
       {/* Hero — dark bg */}
-      <section className="pt-32 pb-20 px-4 bg-[#1B0C27] text-white">
+      <section className="pt-36 pb-20 px-4 bg-[#1B0C27] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[12px] font-semibold text-[rgba(255,255,255,0.4)] uppercase tracking-widest mb-4">
             April 1, 2026

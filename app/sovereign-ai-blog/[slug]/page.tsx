@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <section className="pt-32 pb-10 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
+      <section className="pt-36 pb-10 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
         <div className="max-w-3xl mx-auto">
           <nav className="flex items-center gap-2 text-[12px] text-[rgba(27,12,37,0.45)] mb-6">
             <Link href="/sovereign-ai-blog" className="hover:text-[#9B6FC8] transition-colors">Blog</Link>

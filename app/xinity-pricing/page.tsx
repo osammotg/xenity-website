@@ -107,7 +107,7 @@ export default function PricingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
+      <section className="pt-36 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-4">
             Pricing

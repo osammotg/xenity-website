@@ -17,7 +17,7 @@ const industries = [
 export default function CustomersPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7] text-center">
+      <section className="pt-36 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7] text-center">
         <div className="max-w-3xl mx-auto">
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-4">Our Customers</p>
           <h1 className="text-[clamp(32px,5vw,56px)] font-medium leading-tight text-[#1B0C25] mb-4">Built for Industries Where Cloud AI Is Not an Option</h1>

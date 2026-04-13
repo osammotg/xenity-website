@@ -31,7 +31,7 @@ export default function CompliancePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7] text-center">
+      <section className="pt-36 pb-20 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7] text-center">
         <div className="max-w-4xl mx-auto">
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-4">
             Compliance

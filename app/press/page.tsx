@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function PressPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
+      <section className="pt-36 pb-16 px-4 bg-gradient-to-b from-[#ede6f6] to-[#F7F6F7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[12px] font-semibold text-[rgba(27,12,37,0.4)] uppercase tracking-widest mb-4">Press</p>
           <h1 className="text-[clamp(36px,5vw,60px)] font-medium leading-tight text-[#1B0C25] mb-4">Press & Media</h1>
